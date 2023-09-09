@@ -5,6 +5,8 @@ import java.util.Arrays;
  * 1. Heapify (bottom up) - convert an unsorted array into a maxHeap data structure
  * 2. use maxHeap to sort the list.
  *
+ * Time Complexity - O(nlogn) - heapify use O(n) * sorting(removing element) use O(logn)
+ *
  * ps. Heap data structure is better than selection sort which take O(n2)
  * while HeapSort take O(nlogn). In place heapification use O(n) + sorting use O(log n).
  * Heap sort is not stable - in practice sometime heap sort is worse than O(nlogn), "cache locality" issue.
