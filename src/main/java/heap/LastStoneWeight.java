@@ -17,6 +17,11 @@ import java.util.PriorityQueue;
  * 1. Create a maxHeap from a given array.
  * 2. loop through heap and get top 2 stones and compare them.
  * 3. return the last stone.
+ *
+ * Time - O(nlogn). Creating heap is O(n). removing, adding from heap is O(logn)
+ * we remove twice and add once so logn + logn + logn = 3logn (ignore constant).
+ * Space - O(n) because we create heap.
+ *
  */
 
 public class LastStoneWeight {
