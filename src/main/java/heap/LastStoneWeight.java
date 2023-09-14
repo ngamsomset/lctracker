@@ -1,7 +1,6 @@
 package heap;
 
-import java.util.Comparator;
-import java.util.PriorityQueue;
+import java.util.*;
 
 /**
  * Given an arrays of stones where all of the number in an array represent the weight of each
@@ -46,5 +45,43 @@ public class LastStoneWeight {
         }
 
         return heap.isEmpty() ? 0 : heap.remove();
+    }
+
+    /**
+     * second approach(not the best)
+     *
+     *  array based simulation
+     *  Intuition
+     *  search for two largest items in an array, if there are not the same value , add a new stone back in.
+     *  repeat this step until we got one stone left.
+     *
+     */
+    private static int removeLargest(List<Integer> stones) {
+        //find the largest stones in array
+        int indexOfLargest = stones.indexOf(Collections.max(stones));
+        int result = stones.get(indexOfLargest);
+        //remove the largest stone by swap it with the last item in an array
+        //1. set the largest stone = last item in array
+        stones.set(indexOfLargest, stones.get(stones.size() - 1));
+        //2.remove the last item in array.
+        stones.remove(stones.size() - 1);
+        return result;
+    }
+
+    public static int arrayBasedLastStoneWeight(int[] stones) {
+        List<Integer> stoneList = new ArrayList<>();
+        for(int weight: stones) {
+            stoneList.add(weight);
+        }
+
+        while (stoneList.size() > 1) {
+            int stone1 = removeLargest(stoneList);
+            int stone2 = removeLargest(stoneList);
+            if (stone1 != stone2) {
+                stoneList.add(stone1 - stone2);
+            }
+        }
+
+        return !stoneList.isEmpty() ? stoneList.remove(0) : 0;
     }
 }
