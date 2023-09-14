@@ -55,6 +55,9 @@ public class LastStoneWeight {
      *  search for two largest items in an array, if there are not the same value , add a new stone back in.
      *  repeat this step until we got one stone left.
      *
+     *  Time - O(n2) - the remove function will use O(n) and we need to run twice.
+     *  swapping the max item with the last item is O(1)
+     *
      */
     private static int removeLargest(List<Integer> stones) {
         //find the largest stones in array

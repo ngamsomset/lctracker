@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c620f9b8-9eab-4854-81c0-ff71d27c3847" name="Changes" comment="add LastStoneWeight comment">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c620f9b8-9eab-4854-81c0-ff71d27c3847" name="Changes" comment="move code">
+      <change beforePath="$PROJECT_DIR$/src/main/java/heap/LastStoneWeight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heap/LastStoneWeight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/heap/findKLargest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heap/findKLargest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +62,7 @@
       <updated>1694302140010</updated>
       <workItem from="1694302141137" duration="9611000" />
       <workItem from="1694384908678" duration="10940000" />
-      <workItem from="1694682520248" duration="3508000" />
+      <workItem from="1694682520248" duration="3857000" />
     </task>
     <task id="LOCAL-00001" summary="add comments for heap">
       <option name="closed" value="true" />
@@ -96,7 +96,23 @@
       <option name="project" value="LOCAL" />
       <updated>1694684906787</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add alternative approach to laststoneweight">
+      <option name="closed" value="true" />
+      <created>1694686537591</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1694686537591</updated>
+    </task>
+    <task id="LOCAL-00006" summary="move code">
+      <option name="closed" value="true" />
+      <created>1694686596564</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1694686596564</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,7 +124,9 @@
     <MESSAGE value="topkfrequent" />
     <MESSAGE value="LastStoneWeight" />
     <MESSAGE value="add LastStoneWeight comment" />
-    <option name="LAST_COMMIT_MESSAGE" value="add LastStoneWeight comment" />
+    <MESSAGE value="add alternative approach to laststoneweight" />
+    <MESSAGE value="move code" />
+    <option name="LAST_COMMIT_MESSAGE" value="move code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
