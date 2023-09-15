@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c620f9b8-9eab-4854-81c0-ff71d27c3847" name="Changes" comment="move code">
+    <list default="true" id="c620f9b8-9eab-4854-81c0-ff71d27c3847" name="Changes" comment="update comment">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/heap/LastStoneWeight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heap/LastStoneWeight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/heap/findKLargest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heap/findKLargest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +62,8 @@
       <updated>1694302140010</updated>
       <workItem from="1694302141137" duration="9611000" />
       <workItem from="1694384908678" duration="10940000" />
-      <workItem from="1694682520248" duration="3857000" />
+      <workItem from="1694682520248" duration="6310000" />
+      <workItem from="1694767725186" duration="1638000" />
     </task>
     <task id="LOCAL-00001" summary="add comments for heap">
       <option name="closed" value="true" />
@@ -112,7 +113,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694686596564</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update comment">
+      <option name="closed" value="true" />
+      <created>1694686774559</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1694686774559</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,7 +135,8 @@
     <MESSAGE value="add LastStoneWeight comment" />
     <MESSAGE value="add alternative approach to laststoneweight" />
     <MESSAGE value="move code" />
-    <option name="LAST_COMMIT_MESSAGE" value="move code" />
+    <MESSAGE value="update comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="update comment" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

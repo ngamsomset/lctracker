@@ -87,4 +87,43 @@ public class LastStoneWeight {
 
         return !stoneList.isEmpty() ? stoneList.remove(0) : 0;
     }
+
+    /**
+     * sorted array based simulation
+     * similar to the above solution.
+     *
+     * Time - O(n2) - the sorting part take O(nlogn) but this can't compare to the
+     * main loop that take O(n) nested with adding item into an array which take another
+     * O(n).
+     *
+     * Intuition
+     * we sort an array in the beginning. each time that we put the stone back we want
+     * to maintain the sorted order of an array.
+     */
+
+    public static int sortedArrayBasedlastStoneWeight(int[] stones) {
+        List<Integer> stoneList = new ArrayList<>();
+        for(int stone:stones) {
+            stoneList.add(stone);
+        }
+
+        Collections.sort(stoneList);
+
+        while (stoneList.size() > 1) {
+            int stone1 = stoneList.remove(stoneList.size() - 1);
+            int stone2 = stoneList.remove(stoneList.size() - 1);
+
+            if (stone1 != stone2) {
+                int newStone = stone1 - stone2;
+                int index = Collections.binarySearch(stoneList, newStone);
+                if (index < 0) {
+                    stoneList.add(- index - 1, newStone);
+                } else {
+                    stoneList.add(index, newStone);
+                }
+            }
+        }
+
+        return !stoneList.isEmpty() ? stoneList.remove(0) : 0;
+    }
 }
