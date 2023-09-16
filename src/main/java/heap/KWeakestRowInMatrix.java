@@ -29,6 +29,11 @@ import java.util.*;
  *
  * Space - Create hashmap cost O(m);
  *
+ * Binary search implementation
+ * The part where we need to find strength took too much time,
+ * if we use binary search we can reduce the time taken in this approach.
+ * instead of O(m x n) it will be O(m log n).
+ *
  *
  */
 public class KWeakestRowInMatrix {
@@ -39,24 +44,41 @@ public class KWeakestRowInMatrix {
                 {1,1,1,1,0},
                 {1,1,0,0,0}};
 
-//        System.out.println(Arrays.toString(kWeakestRow(mat, 3)));
+        System.out.println(Arrays.toString(kWeakestRow(mat, 3)));
 
+    }
+
+    private static int binarySearch(int[] row) {
+        int low = 0;
+        int high = row.length;
+
+        while (low < high) {
+            int mid = low + (high - low) / 2;
+            if(row[mid] == 1) {
+                low = mid + 1;
+            } else {
+                high = mid;
+            }
+        }
+        return low;
     }
     public static int[] kWeakestRow(int[][] mat, int k) {
         int m = mat.length;
-        int n = mat[0].length;
+//        int n = mat[0].length;
 
         //calculate all strengths and put them in the hashmap
         Map<Integer, List<Integer>> strengths = new HashMap<>();
         for (int i = 0; i < m; i++) {
-            int strength = 0;
-            for (int j = 0 ; j < n; j++) {
-                //count only 1
-                if (mat[i][j] == 0) {
-                    break;
-                }
-                strength++;
-            }
+//            int strength = 0;
+//            for (int j = 0 ; j < n; j++) {
+//                //count only 1
+//                if (mat[i][j] == 0) {
+//                    break;
+//                }
+//                strength++;
+//            }
+
+            int strength = binarySearch(mat[i]);
 
             if (!strengths.containsKey(strength)) {
                 strengths.put(strength, new ArrayList<>());

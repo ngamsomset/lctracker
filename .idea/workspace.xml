@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c620f9b8-9eab-4854-81c0-ff71d27c3847" name="Changes" comment="LastStoneWeight sortedarraybased">
-      <change afterPath="$PROJECT_DIR$/src/main/java/heap/KWeakestRowInMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c620f9b8-9eab-4854-81c0-ff71d27c3847" name="Changes" comment="comment out testing code">
+      <change beforePath="$PROJECT_DIR$/src/main/java/heap/KWeakestRowInMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heap/KWeakestRowInMatrix.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +63,7 @@
       <workItem from="1694384908678" duration="10940000" />
       <workItem from="1694682520248" duration="6310000" />
       <workItem from="1694767725186" duration="4574000" />
-      <workItem from="1694854749047" duration="4270000" />
+      <workItem from="1694854749047" duration="5682000" />
     </task>
     <task id="LOCAL-00001" summary="add comments for heap">
       <option name="closed" value="true" />
@@ -130,7 +129,23 @@
       <option name="project" value="LOCAL" />
       <updated>1694775371106</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="KWeakestRowInMatrix">
+      <option name="closed" value="true" />
+      <created>1694859404985</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1694859404986</updated>
+    </task>
+    <task id="LOCAL-00010" summary="comment out testing code">
+      <option name="closed" value="true" />
+      <created>1694859423093</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1694859423093</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,7 +172,9 @@
     <MESSAGE value="move code" />
     <MESSAGE value="update comment" />
     <MESSAGE value="LastStoneWeight sortedarraybased" />
-    <option name="LAST_COMMIT_MESSAGE" value="LastStoneWeight sortedarraybased" />
+    <MESSAGE value="KWeakestRowInMatrix" />
+    <MESSAGE value="comment out testing code" />
+    <option name="LAST_COMMIT_MESSAGE" value="comment out testing code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -166,11 +183,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
           <line>11</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/heap/KWeakestRowInMatrix.java</url>
-          <line>68</line>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
