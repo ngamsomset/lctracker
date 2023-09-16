@@ -39,7 +39,7 @@ public class KWeakestRowInMatrix {
                 {1,1,1,1,0},
                 {1,1,0,0,0}};
 
-        System.out.println(Arrays.toString(kWeakestRow(mat, 3)));
+//        System.out.println(Arrays.toString(kWeakestRow(mat, 3)));
 
     }
     public static int[] kWeakestRow(int[][] mat, int k) {
